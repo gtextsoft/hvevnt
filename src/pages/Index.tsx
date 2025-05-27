@@ -1,9 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Clock, Calendar, MapPin, Users, TrendingUp, Globe } from "lucide-react";
-import ApplicationForm from "@/components/ApplicationForm";
 import { useState } from "react";
 
 const Index = () => {
@@ -66,13 +64,12 @@ const Index = () => {
             <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
               No wannabes, no tag-alongs—only the people who sign the pay-checks and carry the weight.
             </p>
-            <Button 
-              size="lg" 
+            <a 
+              href="https://app.mailingboss.com/lists/6834c91cd3d35/subscribe"
               className="bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold px-8 py-4 text-lg"
-              onClick={() => setShowForm(true)}
             >
               Apply Now
-            </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -281,13 +278,12 @@ const Index = () => {
               <p className="text-lg text-slate-300 mb-8">
                 No marketing bait-and-switch, no hidden upsell—just real value, laser-focused.
               </p>
-              <Button 
-                size="lg" 
-                className="bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold px-8 py-4 text-lg"
-                onClick={() => setShowForm(true)}
-              >
-                Apply Now
-              </Button>
+              <a 
+              href="https://app.mailingboss.com/lists/6834c91cd3d35/subscribe"
+              className="bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold px-8 py-4 text-lg"
+            >
+              Apply Now
+            </a>
               <p className="text-sm text-slate-400 mt-4 italic">
                 Because the future belongs to builders who keep learning—even after the spreadsheet turns green.
               </p>
@@ -295,11 +291,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Application Form Modal */}
-      {showForm && (
-        <ApplicationForm onClose={() => setShowForm(false)} />
-      )}
     </div>
   );
 };
