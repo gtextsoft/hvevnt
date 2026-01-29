@@ -1,40 +1,48 @@
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Clock, Calendar, MapPin, Users, TrendingUp, Globe } from "lucide-react";
-import { useState } from "react";
+import { Clock, Calendar, Target, Building2, Mail, Phone } from "lucide-react";
 
 const Index = () => {
-  const [showForm, setShowForm] = useState(false);
-
-  const timeZones = [
-    { region: "Central (US)", time: "10 AM CST" },
-    { region: "United Kingdom / West Africa", time: "4 PM" },
-    { region: "Doha", time: "6 PM" },
-    { region: "UAE", time: "7 PM" },
+  const programFocus = [
+    "Strategic leadership, not hustle",
+    "Organizational structure, not guesswork",
+    "Decision-making at the ownership and presidency level",
+    "Sustainable systems, not personality-driven management",
   ];
 
-  const benefits = [
+  const whoIsFor = [
+    "Business owners and founders",
+    "Presidents and CEOs",
+    "Senior executives and top management",
+    "Leaders managing teams, departments, or institutions",
+    "Entrepreneurs transitioning from operator to strategic leader",
+  ];
+
+  const gains = [
+    "Clear understanding of the role of an owner vs operator",
+    "Practical management and leadership frameworks",
+    "Tools to build systems that run without constant supervision",
+    "Improved decision-making at executive level",
+    "Exposure to global leadership perspectives",
+    "Access to a curated room of serious business leaders",
+  ];
+
+  const speakers = [
     {
-      icon: <Users className="w-6 h-6" />,
-      title: "Scale Teams Without Burning Culture",
-      description: "Learn frameworks that preserve your company's DNA while growing rapidly"
+      name: "Pastor Dave Burrow",
+      role: "International leadership teacher and systems thinker",
+      bio: "Decades of experience equipping leaders to build values-driven organizations.",
     },
     {
-      icon: <TrendingUp className="w-6 h-6" />,
-      title: "Revenue Growth with Cash Sanity",
-      description: "Master the art of scaling revenue while maintaining healthy cash flow"
+      name: "Dr. Stephen Akintayo",
+      role: "Convener, Owners & President Management Program",
+      bio: "Entrepreneur, leadership strategist, and institutional builder with a track record of training high-impact business leaders across sectors.",
     },
     {
-      icon: <Globe className="w-6 h-6" />,
-      title: "Global Market Intelligence",
-      description: "Fresh insights on US–UK–Africa–GCC market pivots and opportunities"
+      name: "Michael Roberts",
+      role: "Global management expert",
+      bio: "Deep insight into executive leadership, organizational control, and sustainable business growth.",
     },
-    {
-      icon: <MapPin className="w-6 h-6" />,
-      title: "Elite Peer Network",
-      description: "Connect with founders who understand your P&L challenges"
-    }
   ];
 
   return (
@@ -45,165 +53,125 @@ const Index = () => {
         <div className="relative container mx-auto px-6 py-20 lg:py-32">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="mb-6 bg-amber-500/20 text-amber-300 border-amber-400/30 px-4 py-2 text-sm font-medium">
-              Strictly for Founders & CEOs
+              Executive-Level Program
             </Badge>
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-              Business Owner Management
+              Owners & President Management Program
               <span className="block text-3xl lg:text-5xl text-amber-400 mt-2">
-                Harvard Debrief
+                (OPM)
               </span>
             </h1>
             <p className="text-xl lg:text-2xl mb-8 text-slate-300">
-              with <strong className="text-white">Dr Stephen Akintayo</strong>
+              Built for Owners. Designed for Presidents. Structured for Scale.
             </p>
             <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 mb-8 border border-slate-700">
               <p className="text-lg italic text-slate-300">
-                "Leadership is lonely, but it doesn't have to be silent." — DSA
+                A high-level management and leadership experience curated for business owners, founders, presidents, and senior executives who are ready to move from operational pressure to strategic control.
               </p>
             </div>
             <p className="text-lg text-slate-300 mb-8 max-w-2xl mx-auto">
-              No wannabes, no tag-alongs—only the people who sign the pay-checks and carry the weight.
+              A closed, executive-level program designed to help leaders think clearly, decide confidently, and build organizations that work without constant firefighting.
             </p>
-            <a 
-              href="https://app.mailingboss.com/lists/6834c91cd3d35/subscribe"
-              className="bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold px-8 py-4 text-lg"
+            <a
+              href="https://www.stephenakintayo.com/opm"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold px-8 py-4 text-lg rounded-md transition-colors"
             >
-              Apply Now
+              Reserve Your Seat
             </a>
           </div>
         </div>
       </section>
 
-      {/* Dr Stephen Akintayo Section */}
+      {/* Program Dates & Schedule */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto bg-slate-50 rounded-lg p-8 shadow-sm">
-            <div className="grid lg:grid-cols-5 gap-8 items-start">
-              <div className="lg:col-span-2">
-                <div className="relative max-w-sm mx-auto">
-                  <img 
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXcjHdl6VFNKt1YrmGMn_mZbjB7YohABHlOw&s"
-                    alt="Dr Stephen Akintayo"
-                    className="w-full h-[500px] object-cover rounded-lg shadow-xl"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent rounded-lg"></div>
-                </div>
-              </div>
-              <div className="lg:col-span-3">
-                <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">
-                  Meet Your Facilitator
-                </h2>
-                <h3 className="text-2xl font-bold text-amber-600 mb-4">
-                  Dr Stephen Akintayo
-                </h3>
-                <div className="space-y-4 text-lg text-slate-700">
-                  <p>
-                    With <strong>25 years of battlefield evidence</strong>, Dr Stephen Akintayo transforms Harvard's theoretical case studies into actionable playbooks that work Monday morning.
-                  </p>
-                  <p>
-                    He bridges the gap between <strong>legacy wisdom</strong> that built empires and <strong>Gen Z realism</strong> that dominates today's markets.
-                  </p>
-                  <div className="bg-white rounded-lg p-6 border-l-4 border-l-amber-500 shadow-sm">
-                    <p className="font-medium text-slate-900 mb-2">
-                      "Who mentors the mentor?"
-                    </p>
-                    <p className="text-slate-600">
-                      This exclusive session answers that question for founders and CEOs who understand that continuous learning is the price of staying ahead.
-                    </p>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-12 text-center">
+              Program Dates & Schedule
+            </h2>
+            <div className="grid lg:grid-cols-2 gap-12">
+              <Card className="border-l-4 border-l-blue-600 shadow-lg">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-4">
+                    <Calendar className="w-6 h-6 text-blue-600 mr-3" />
+                    <h3 className="text-2xl font-bold text-slate-900">Date</h3>
                   </div>
-                </div>
-              </div>
+                  <p className="text-3xl font-bold text-slate-900 mb-6">
+                    3rd – 4th February, 2025
+                  </p>
+                  <div className="flex items-center mb-4">
+                    <Clock className="w-6 h-6 text-blue-600 mr-3" />
+                    <h3 className="text-2xl font-bold text-slate-900">Time</h3>
+                  </div>
+                  <p className="text-xl text-slate-700 mb-4">9:00 AM daily</p>
+                  <p className="text-slate-600 font-medium">Format: Intensive live sessions</p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-l-amber-500 shadow-lg">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4">About the Program</h3>
+                  <p className="text-slate-700 mb-4 leading-relaxed">
+                    As organizations grow, the demands on leadership change. What worked at the early stage no longer works at scale. OPM is designed to address this transition.
+                  </p>
+                  <p className="text-slate-700 leading-relaxed">
+                    Participants will be exposed to proven management frameworks, leadership systems, and governance principles used by high-performing organizations across the world.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Event Details */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            {/* Date & Time */}
-            <Card className="border-l-4 border-l-blue-600 shadow-lg">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  <Calendar className="w-6 h-6 text-blue-600 mr-3" />
-                  <h3 className="text-2xl font-bold text-slate-900">Date</h3>
-                </div>
-                <p className="text-3xl font-bold text-slate-900 mb-6">
-                  Saturday, 7 June 2025
-                </p>
-                
-                <div className="flex items-center mb-4">
-                  <Clock className="w-6 h-6 text-blue-600 mr-3" />
-                  <h3 className="text-2xl font-bold text-slate-900">Time Zones</h3>
-                </div>
-                <div className="space-y-3">
-                  {timeZones.map((tz, index) => (
-                    <div key={index} className="flex justify-between items-center py-2 border-b border-slate-200 last:border-b-0">
-                      <span className="text-slate-700 font-medium">{tz.region}</span>
-                      <span className="text-slate-900 font-bold">{tz.time}</span>
-                    </div>
-                  ))}
-                </div>
-                <p className="text-sm text-slate-600 mt-4 italic">
-                  Check your calendar, block the slot, silence the distractions.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Fee & Selection */}
-            <Card className="border-l-4 border-l-amber-500 shadow-lg">
-              <CardContent className="p-8">
-                <div className="text-center">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4">Investment</h3>
-                  <div className="bg-gradient-to-r from-amber-50 to-amber-100 rounded-lg p-6 mb-6">
-                    <p className="text-4xl font-bold text-amber-600 mb-2">FREE</p>
-                    <p className="text-lg text-slate-700 font-medium">by selection only</p>
-                  </div>
-                  <p className="text-slate-600">
-                    Exclusivity keeps the signal high and the noise low.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Why This Matters */}
+      {/* This Program Focuses On */}
       <section className="py-16 bg-slate-50">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-8 text-center">
-              Why This Matters
+              This Program Focuses On
             </h2>
             <Card className="shadow-lg">
               <CardContent className="p-8">
-                <p className="text-lg text-slate-700 mb-6 leading-relaxed">
-                  Harvard's case studies are great in theory. Dr Stephen Akintayo strips them down, 
-                  welds on 25 years of battlefield evidence, and hands you a playbook you can actually run{" "}
-                  <strong className="text-slate-900">Monday morning</strong>—without needing a doctorate in jargon.
-                </p>
-                
-                <h4 className="text-xl font-bold text-slate-900 mb-4">Expect a lively mix of:</h4>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-slate-700"><strong>Legacy wisdom</strong> (the stuff that built empires before smartphones).</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-slate-700"><strong>Gen Z realism</strong> (because TikTok attention spans rule the market).</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-slate-700">Brutally honest Q&A ("nice" isn't useful, truth is).</span>
-                  </li>
+                <ul className="space-y-4">
+                  {programFocus.map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-slate-700 text-lg">{item}</span>
+                    </li>
+                  ))}
                 </ul>
-                
-                <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-6 border border-blue-200">
-                  <p className="text-lg text-slate-800 font-medium italic text-center">
-                    If you've ever whispered <em>"Who mentors the mentor?"</em>—this room is the answer.
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Who This Program Is For */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-8 text-center">
+              Who This Program Is For
+            </h2>
+            <Card className="shadow-lg">
+              <CardContent className="p-8">
+                <ul className="space-y-3 mb-8">
+                  {whoIsFor.map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <div className="w-2 h-2 bg-amber-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                      <span className="text-slate-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="border-t border-slate-200 pt-6 space-y-3">
+                  <p className="text-slate-600 italic">
+                    If you are still figuring out what business to start, this program is not for you.
+                  </p>
+                  <p className="text-slate-900 font-medium">
+                    If you already lead people, systems, or capital, this room is for you.
                   </p>
                 </div>
               </CardContent>
@@ -212,30 +180,20 @@ const Index = () => {
         </div>
       </section>
 
-      {/* What You'll Take Home */}
-      <section className="py-16 bg-white">
+      {/* Speakers & Faculty */}
+      <section className="py-16 bg-slate-50">
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-12 text-center">
-              What You'll Take Home
+              Speakers & Faculty
             </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              {benefits.map((benefit, index) => (
-                <Card key={index} className="group hover:shadow-xl transition-all duration-300 border hover:border-blue-300">
+            <div className="grid md:grid-cols-3 gap-8">
+              {speakers.map((speaker, index) => (
+                <Card key={index} className="border-l-4 border-l-amber-500 shadow-lg hover:shadow-xl transition-shadow">
                   <CardContent className="p-8">
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
-                        {benefit.icon}
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-bold text-slate-900 mb-3">
-                          {benefit.title}
-                        </h3>
-                        <p className="text-slate-700 leading-relaxed">
-                          {benefit.description}
-                        </p>
-                      </div>
-                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">{speaker.name}</h3>
+                    <p className="text-amber-600 font-medium text-sm mb-3">{speaker.role}</p>
+                    <p className="text-slate-700 leading-relaxed">{speaker.bio}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -244,50 +202,103 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Selection Process */}
+      {/* What You Will Gain */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-12 text-center">
+              What You Will Gain
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              {gains.map((gain, index) => (
+                <Card key={index} className="group hover:shadow-xl transition-all duration-300 border hover:border-blue-300">
+                  <CardContent className="p-6 flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
+                      <Target className="w-5 h-5" />
+                    </div>
+                    <p className="text-slate-700 leading-relaxed pt-1">{gain}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why OPM Matters */}
       <section className="py-16 bg-slate-900 text-white">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-12">
-              How Selection Works
+            <h2 className="text-3xl lg:text-4xl font-bold mb-8">
+              Why OPM Matters
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center text-2xl font-bold text-slate-900 mx-auto mb-4">
-                  1
+            <p className="text-xl text-slate-300 mb-6 leading-relaxed">
+              Leadership failure is rarely about lack of effort.
+            </p>
+            <p className="text-xl text-slate-300 mb-8 leading-relaxed">
+              It is usually about lack of structure.
+            </p>
+            <p className="text-lg text-amber-400 font-medium max-w-2xl mx-auto">
+              OPM is designed to help leaders replace stress with systems, confusion with clarity, and pressure with control.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Registration & Reservations */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-12 text-center">
+              Registration & Reservations
+            </h2>
+            <Card className="shadow-lg border-l-4 border-l-amber-500">
+              <CardContent className="p-8">
+                <p className="text-lg text-slate-700 mb-8">
+                  To reserve your seat for the Owners & President Management Program:
+                </p>
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4">
+                    <Building2 className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+                    <div>
+                      <p className="font-bold text-slate-900">Visit</p>
+                      <a
+                        href="https://www.stephenakintayo.com/opm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:underline font-medium"
+                      >
+                        www.stephenakintayo.com/opm
+                      </a>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <Mail className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+                    <div>
+                      <p className="font-bold text-slate-900">For further enquiries</p>
+                      <p className="text-slate-700">Email: products@stephenakintayo.com</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <Phone className="w-6 h-6 text-amber-600 flex-shrink-0 mt-1" />
+                    <div>
+                      <p className="font-bold text-slate-900">Call or WhatsApp</p>
+                      <p className="text-slate-700">+234 816 790 1719 | +234 818 000 0618</p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold mb-3">Submit Application</h3>
-                <p className="text-slate-300">Complete the form and get instant confirmation</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center text-2xl font-bold text-slate-900 mx-auto mb-4">
-                  2
+                <div className="mt-10 text-center">
+                  <a
+                    href="https://www.stephenakintayo.com/opm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold px-8 py-4 text-lg rounded-md transition-colors"
+                  >
+                    Reserve Your Seat
+                  </a>
                 </div>
-                <h3 className="text-xl font-bold mb-3">Curation Process</h3>
-                <p className="text-slate-300">Our team reviews and curates the final cohort</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center text-2xl font-bold text-slate-900 mx-auto mb-4">
-                  3
-                </div>
-                <h3 className="text-xl font-bold mb-3">Private Access</h3>
-                <p className="text-slate-300">Selected founders receive access link 72 hours before</p>
-              </div>
-            </div>
-            <div className="mt-12">
-              <p className="text-lg text-slate-300 mb-8">
-                No marketing bait-and-switch, no hidden upsell—just real value, laser-focused.
-              </p>
-              <a 
-              href="https://app.mailingboss.com/lists/6834c91cd3d35/subscribe"
-              className="bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold px-8 py-4 text-lg"
-            >
-              Apply Now
-            </a>
-              <p className="text-sm text-slate-400 mt-4 italic">
-                Because the future belongs to builders who keep learning—even after the spreadsheet turns green.
-              </p>
-            </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
