@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Clock, Calendar, Target, Building2, Mail, Phone, Check, ArrowRight } from "lucide-react";
+import { Clock, Calendar, Target, Mail, Phone, Check, ArrowRight } from "lucide-react";
 
 const Index = () => {
   const programFocus = [
@@ -306,18 +306,6 @@ const Index = () => {
                   To reserve your seat for the Owners & President Management Program:
                 </p>
                 <div className="space-y-6">
-                  <a
-                    href={ctaUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-start gap-4 p-4 rounded-xl bg-stone-50 hover:bg-amber-50 border border-stone-200 hover:border-amber-200 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2"
-                  >
-                    <Building2 className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="font-semibold text-slate-900">Visit</p>
-                      <p className="text-blue-600 font-medium">www.stephenakintayo.com/opm</p>
-                    </div>
-                  </a>
                   <div className="flex items-start gap-4 p-4 rounded-xl bg-stone-50 border border-stone-200">
                     <Mail className="w-6 h-6 text-amber-600 flex-shrink-0 mt-0.5" />
                     <div>
