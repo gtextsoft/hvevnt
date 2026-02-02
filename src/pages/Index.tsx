@@ -32,16 +32,19 @@ const Index = () => {
       name: "Pastor Dave Burrow",
       role: "International leadership teacher and systems thinker",
       bio: "Decades of experience equipping leaders to build values-driven organizations.",
+      image: "/Pst-Dave.png",
     },
     {
       name: "Dr. Stephen Akintayo",
       role: "Convener, Owners & President Management Program",
       bio: "Entrepreneur, leadership strategist, and institutional builder with a track record of training high-impact business leaders across sectors.",
+      image: "/SAF2.jpg",
     },
     {
       name: "Michael Roberts",
       role: "Global management expert",
       bio: "Deep insight into executive leadership, organizational control, and sustainable business growth.",
+      image: "/Robert.png",
     },
   ];
 
@@ -214,10 +217,12 @@ const Index = () => {
                   className="border-0 shadow-xl shadow-slate-200/50 rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-slate-200/60 hover:-translate-y-1 transition-all duration-300 group"
                 >
                   <CardContent className="p-8 lg:p-10 h-full flex flex-col">
-                    <div className="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center mb-6 group-hover:bg-amber-200 transition-colors">
-                      <span className="font-serif text-xl font-semibold text-amber-700">
-                        {speaker.name.charAt(0)}
-                      </span>
+                    <div className="w-full aspect-square max-w-[200px] mx-auto mb-6 rounded-2xl overflow-hidden bg-stone-200 shadow-inner">
+                      <img
+                        src={speaker.image}
+                        alt={speaker.name}
+                        className="w-full h-full object-cover object-top"
+                      />
                     </div>
                     <h3 className="font-serif text-xl font-semibold text-slate-900 mb-2">{speaker.name}</h3>
                     <p className="text-amber-600 font-medium text-sm mb-4">{speaker.role}</p>
